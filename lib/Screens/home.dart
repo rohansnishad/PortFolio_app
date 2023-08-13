@@ -2,6 +2,7 @@
 // import 'dart:js_util';
 import 'package:flutter/cupertino.dart';
 import 'package:portfolio_app/Screens/experience.dart';
+import 'package:portfolio_app/Screens/github_1.dart';
 import 'package:portfolio_app/Screens/tech_page.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -61,7 +62,7 @@ class homePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return  Scaffold(
 
-      // backgroundColor: Color.fromARGB(100, 24edB0, 249, 255),
+      backgroundColor: Color.fromARGB(255, 177, 217, 232),
 
          body: SingleChildScrollView(
           child: Column(
@@ -75,7 +76,7 @@ class homePage extends StatelessWidget {
               child: CircleAvatar(
                 radius: 140,
                 backgroundImage: NetworkImage(
-                    'https://www.google.com/url?sa=i&url=https%3A%2F%2Fin.linkedin.com%2Fin%2Frohan-nishad-4a79a5234&psig=AOvVaw3OPAN5nsdeLbKMgCG8wizg&ust=1690090600922000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCJC_6aDMoYADFQAAAAAdAAAAABAE'),
+                    'https://media.licdn.com/dms/image/D5603AQHvaKZ0qqftGQ/profile-displayphoto-shrink_800_800/0/1674959539754?e=1695859200&v=beta&t=afCfsA9mPQYtFgaepLZElqbVen1WDcWqDSrIlLEamMI'),
               ),
             ),
 
@@ -103,7 +104,7 @@ class homePage extends StatelessWidget {
 
                SizedBox(height: 80.0),
              GestureDetector(
-               onTap: () => Navigator.pushReplacement(
+               onTap: () => Navigator.push(
                  context,
                  MaterialPageRoute(
                    builder: (context) {
@@ -222,7 +223,7 @@ class homePage extends StatelessWidget {
              SizedBox(height: 80.0),
 
              GestureDetector(
-               onTap: () => Navigator.pushReplacement(
+               onTap: () => Navigator.push(
                  context,
                  MaterialPageRoute(
                    builder: (context) {
@@ -250,11 +251,11 @@ class homePage extends StatelessWidget {
              SizedBox(height: 50.0),
 
              GestureDetector(
-               onTap: () => Navigator.pushReplacement(
+               onTap: () => Navigator.push(
                  context,
                  MaterialPageRoute(
                    builder: (context) {
-                     return experience();
+                     return github();
                    },
                  ),
                ),

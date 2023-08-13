@@ -6,7 +6,7 @@ import 'dart:convert';
 
 
 class github extends StatelessWidget {
-  final String githubUsername = 'https://api.github.com/user/rohansnishad';
+  final String githubUsername = 'https://github.com/rohansnishad';
   final String githubAccessToken = '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';//github access token
 
   @override
